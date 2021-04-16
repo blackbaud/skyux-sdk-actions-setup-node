@@ -7100,10 +7100,10 @@ function configAuthentication() {
         '@blackbaud-internal:always-auth=true',
         '//blackbaud.pkgs.visualstudio.com/_packaging/Blackbaud-npm/npm/registry/:username=Blackbaud-npm',
         '//blackbaud.pkgs.visualstudio.com/_packaging/Blackbaud-npm/npm/registry/:_password="${NODE_AUTH_TOKEN}"',
-        '//blackbaud.pkgs.visualstudio.com/_packaging/Blackbaud-npm/npm/registry/:email=npm requires email to be set but doesn\'t use the value',
+        '//blackbaud.pkgs.visualstudio.com/_packaging/Blackbaud-npm/npm/registry/:email=none',
         '//blackbaud.pkgs.visualstudio.com/_packaging/Blackbaud-npm/npm/:username=Blackbaud-npm',
         '//blackbaud.pkgs.visualstudio.com/_packaging/Blackbaud-npm/npm/:_password="${NODE_AUTH_TOKEN}"',
-        '//blackbaud.pkgs.visualstudio.com/_packaging/Blackbaud-npm/npm/:email=npm requires email to be set but doesn\'t use the value'
+        '//blackbaud.pkgs.visualstudio.com/_packaging/Blackbaud-npm/npm/:email=none'
     ].join('\n');
     fs.writeFileSync(npmrcPath, npmrcContents);
     core.exportVariable('NPM_CONFIG_USERCONFIG', npmrcPath);
