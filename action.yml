@@ -1,0 +1,9 @@
+name: 'SKY UX GitHub Actions - Setup Node'
+description: 'GitHub Action to setup Node to install packages from  the internal Blackbaud registry.'
+author: 'Blackbaud'
+branding:
+  icon: 'box'
+  color: 'gray-dark'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

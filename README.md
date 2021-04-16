@@ -1,1 +1,1 @@
-# skyux-sdk-actions-setup-node
+# @skyux-sdk/actions-setup-node
